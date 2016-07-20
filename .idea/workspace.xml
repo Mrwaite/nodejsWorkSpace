@@ -67,7 +67,7 @@
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="307">
+              <first_editor relative-caret-position="499">
                 <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
                 <folding />
               </first_editor>
@@ -442,12 +442,12 @@
       <workItem from="1468833471705" duration="1178000" />
       <workItem from="1468917925619" duration="3990000" />
       <workItem from="1468954541777" duration="6587000" />
-      <workItem from="1468975327551" duration="2504000" />
+      <workItem from="1468975327551" duration="2619000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206570000" />
+    <option name="totallyTimeSpent" value="206685000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -899,7 +899,7 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="307">
+          <first_editor relative-caret-position="499">
             <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
             <folding />
           </first_editor>
