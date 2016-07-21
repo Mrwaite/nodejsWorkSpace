@@ -2,7 +2,8 @@ var express = require('express');
 var request = require('superagent');
 var cheerio = require('cheerio');
 var router = express.Router();
-var setting = require('../setting');
+var settings = require('../setting');
+var Urls = require('../models/Urls');
 
 /* GET home page. */
 
@@ -13,9 +14,8 @@ var setting = require('../setting');
 
 module.exports = function(app){
     app.get('/', function(req, res){
-        request.get(setting.startUrl).end(function(err, res){
-            //返回的res是包含
-        });
-
+        var startCrawler = new Urls();
+        console.log(settings);
+        startCrawler.guideUrl();
     });
 };
