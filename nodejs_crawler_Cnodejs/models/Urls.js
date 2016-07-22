@@ -1,8 +1,8 @@
 var request = require('superagent'),
     cheerio = require('cheerio'),
     async = require('async'),
-    fs = require('fs'),
-    settings = require('../setting');
+    settings = require('../setting'),
+    find = require('cheerio-eq');
 
 module.exports = Urls;
 
@@ -33,27 +33,30 @@ function Urls (start){
 * and取得这个page下面的所有的topic的items数组，并记录在这个page模型下面的targetPage
 * 之后再次静茹guideUrl，并进入else分支，并爬里面的信息
 * */
-Urls.prototype.guideUrl = function () {
+Urls.prototype.guideUrl = function (response) {
     var startUrl = this.startUrl,
         page = this.page,
-        targetPage = this.targetPage;
+        targetPage = this.targetPage,
+        _this = this;
     var accessUrl;
     if(targetPage === ''){
         accessUrl = this.startUrl + '/?page=' + this.page;
-        this.getNext(this.page);
+        this.hasNext(this.page);
         //TODO:取得相应url上面罗列的网址
-        this.targetPage = this.getTopic(accessUrl);
-        this.guideUrl();
+        this.getTopic(accessUrl);
+
     }
     else {
         //TODO:Url.getHtml()
+        debugger;
         targetPage.forEach(function (value, id, array) {
-            accessUrl = startUrl + value;
+            accessUrl = startUrl + targetPage[0];
 
             //回调函数，本来是期望在回调函数执行完成，因为是异步的所以can`t
             request.get(accessUrl).end(function(err, res) {
                 if(err) {
-                    return next(err);
+                    //return (err.status;
+                    console.log(err.stack);
                 }
                 var $ = cheerio.load(res.text);
 
@@ -65,41 +68,28 @@ Urls.prototype.guideUrl = function () {
                 };
 
                 saveInfo.title = $('.topic_full_title').text();
-                saveInfo.author = $('.changes span:eq(1) a').text();
-                saveInfo.content = $('.markdown-text:eq(0)').text();
+                saveInfo.author = find($, '.changes span:eq(1) a').text();
+                saveInfo.content = find($, '.markdown-text:eq(0)').text();
 
+                //console.log('guideUrl', _this);
                 //TODO:存入数据库
                 console.log(saveInfo);
+
             });
         });
 
     }
 }
 
-Urls.prototype.getNext = function (page) {
-    var _this = this;
-    var start = {};
-    if(this.hasNext()) {
-        page += 1;
-        start = {
-            startUrl : _this.startUrl,
-            page : page,
-            targetPage : ''
-        };
-        var NextPage = new Urls(start);
-        NextPage.guideUrl();
-    }
-}
-
 Urls.prototype.getTopic = function (accessUrl) {
     //TODO: cheerio 读取网页上的topic信息
-    console.log(0);
-    var a = 1;
+    var _this = this;
 
     //回调函数，本来是期望在回调函数执行完之后，继续代码的执行，但是因为是异步的所以不行
     request.get(accessUrl).end(function (err, res) {
+        debugger;
         if (err) {
-            console.log(0);
+            return next(err);
            //return next(err);
         }
         var $ = cheerio.load(res.text);
@@ -108,25 +98,43 @@ Urls.prototype.getTopic = function (accessUrl) {
             var $element = $(element);
             items.push($element.attr('href'));
         });
-
-        return items;
+        console.log('getTopic', _this);
+        _this.targetPage =  items;
+        _this.guideUrl();
     });
 }
 
 
-Urls.prototype.hasNext = function () {
+Urls.prototype.hasNext = function (page) {
     var accessUrl = this.startUrl + '/?page=' + (this.page + 1);
+    var has = false;
+    var start = {};
+    var _this = this;
 
     //回调函数，会滞后处理
     request.get(accessUrl).end(function (err, res) {
+        debugger;
         if(err) {
-            return 1;
+            return next(err);
         }
         var $ = cheerio.load(res.text);
         if($('#topic_list .topic_title').length){
-            return false;
+            has = false;
         }
-        return true;
+        else {
+            has = true;
+        }
+        if(has) {
+            page += 1;
+            start = {
+                startUrl : _this.startUrl,
+                page : page,
+                targetPage : ''
+            };
+            console.log('hasNext', _this);
+            var NextPage = new Urls(start);
+            NextPage.guideUrl();
+        }
     })
 }
 

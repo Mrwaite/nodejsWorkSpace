@@ -16,6 +16,6 @@ module.exports = function(app){
     app.get('/', function(req, res){
         var startCrawler = new Urls();
         console.log(settings);
-        startCrawler.guideUrl();
+        startCrawler.guideUrl(res);
     });
 };

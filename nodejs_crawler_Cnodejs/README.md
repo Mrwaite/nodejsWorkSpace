@@ -52,7 +52,7 @@ var request = require('superagent');
 request.end(function(){});
 ```
 .end里面的参数arguments的结构为
-```
+
 {
     0 ： null //估计为err信息
     1 ： {
