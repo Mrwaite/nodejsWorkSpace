@@ -4,13 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/nodejs_crawler_Cnodejs/models/Urls.js" line="4" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b333cb9b-ca64-49f4-b0f4-3daec96a78da" name="默认" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodejs_crawler_Cnodejs/README.md" afterPath="$PROJECT_DIR$/nodejs_crawler_Cnodejs/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodejs_crawler_Cnodejs/models/Urls.js" afterPath="$PROJECT_DIR$/nodejs_crawler_Cnodejs/models/Urls.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodejs_crawler_Cnodejs/package.json" afterPath="$PROJECT_DIR$/nodejs_crawler_Cnodejs/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodejs_crawler_Cnodejs/routes/index.js" afterPath="$PROJECT_DIR$/nodejs_crawler_Cnodejs/routes/index.js" />
-    </list>
+    <list default="true" id="b333cb9b-ca64-49f4-b0f4-3daec96a78da" name="默认" comment="" />
     <ignored path="nodejsWorkSpace.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -125,8 +119,8 @@
           <file leaf-file-name="Urls.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/nodejs_crawler_Cnodejs/models/Urls.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="328">
-                  <caret line="78" column="8" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="8" />
+                <state relative-caret-position="224">
+                  <caret line="125" column="9" selection-start-line="125" selection-start-column="9" selection-end-line="125" selection-end-column="9" />
                   <folding />
                 </state>
               </provider>
@@ -140,7 +134,7 @@
             <entry file="file://$PROJECT_DIR$/nodejs_crawler_Cnodejs/README.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
                 <state split_layout="FIRST">
-                  <first_editor relative-caret-position="24">
+                  <first_editor relative-caret-position="312">
                     <caret line="13" column="20" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="18" />
                     <folding />
                   </first_editor>
@@ -613,12 +607,12 @@
       <workItem from="1468954541777" duration="6587000" />
       <workItem from="1468975327551" duration="19057000" />
       <workItem from="1469062063031" duration="18212000" />
-      <workItem from="1469149543521" duration="11880000" />
+      <workItem from="1469149543521" duration="12305000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="253215000" />
+    <option name="totallyTimeSpent" value="253640000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -630,7 +624,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.105540894" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1004,25 +998,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nodejs_crawler_Cnodejs/models/Urls.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="78" column="8" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nodejs_crawler_Cnodejs/README.md">
       <provider editor-type-id="MultiMarkdownFxPreviewEditor">
         <state />
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="24">
+          <first_editor relative-caret-position="312">
             <caret line="13" column="20" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="18" />
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodejs_crawler_Cnodejs/models/Urls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="125" column="9" selection-start-line="125" selection-start-column="9" selection-end-line="125" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
