@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var request = require('superagent');
 var http = require('http');
-var setting = require('./setting');
+
 
 var routes = require('./routes/index');
 var users = require('./routes/users');

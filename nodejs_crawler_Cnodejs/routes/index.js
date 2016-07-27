@@ -2,7 +2,7 @@ var express = require('express');
 var request = require('superagent');
 var cheerio = require('cheerio');
 var router = express.Router();
-var settings = require('../setting');
+var settings = require('../setting.js');
 var Urls = require('../models/Urls');
 
 /* GET home page. */
@@ -14,8 +14,32 @@ var Urls = require('../models/Urls');
 
 module.exports = function(app){
     app.get('/', function(req, res){
-        var startCrawler = new Urls();
-        console.log(settings);
-        startCrawler.guideUrl(res);
+        //res.send(res)
+        var startCrawler = new Urls(settings);
+        //res.send(settings);
+        var save = [];
+        //console.log(settings);
+        var callback = function (err, saveInfo, _this) {
+            //res.send(_this);
+            if(err == 'finish') {
+                return res.send(save);
+            }
+            else if(err){
+                return res.send(err);
+            }
+            else {
+                save.push(saveInfo);
+                _this.getNumber++;
+                console.log(_this.getNumber);
+                if (_this.getNumber == 40) {
+                    settings.urlPage++;
+                    startCrawler = new Urls(settings);
+                    startCrawler.guideUrl(callback);
+                };
+            }
+        }
+        startCrawler.guideUrl(callback);
+
+
     });
 };
