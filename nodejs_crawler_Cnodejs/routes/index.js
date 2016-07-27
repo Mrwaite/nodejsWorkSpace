@@ -3,7 +3,7 @@ var request = require('superagent');
 var cheerio = require('cheerio');
 var router = express.Router();
 var settings = require('../setting.js');
-var Urls = require('../models/Urls');
+var Urls = require('../moderls/Urls');
 
 /* GET home page. */
 
@@ -14,13 +14,17 @@ var Urls = require('../models/Urls');
 
 module.exports = function(app){
     app.get('/', function(req, res){
-        //res.send(res)
+
+        //创建Urls实例
         var startCrawler = new Urls(settings);
-        //res.send(settings);
+
+        //存储爬虫爬取到的信息
         var save = [];
-        //console.log(settings);
+
+        //guideUrl的回调函数，每次爬取到数据都会返回
         var callback = function (err, saveInfo, _this) {
-            //res.send(_this);
+
+            //如果err返回的是‘finish’,表示cnodejs页面已经爬取完
             if(err == 'finish') {
                 return res.send(save);
             }
@@ -30,7 +34,9 @@ module.exports = function(app){
             else {
                 save.push(saveInfo);
                 _this.getNumber++;
-                console.log(_this.getNumber);
+                //console.log(_this.getNumber);
+                //当一个页面上面的topic爬取完，就进行下个页面的爬取
+                //创建一个新的实例，用于下个页面的 爬取
                 if (_this.getNumber == 40) {
                     settings.urlPage++;
                     startCrawler = new Urls(settings);
@@ -38,8 +44,8 @@ module.exports = function(app){
                 };
             }
         }
+
+        //第一个页面的爬取
         startCrawler.guideUrl(callback);
-
-
     });
 };
