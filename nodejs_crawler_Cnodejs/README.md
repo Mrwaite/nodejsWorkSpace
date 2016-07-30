@@ -72,3 +72,20 @@ request.end(function(){});
 
 由于nodejs的异步架构的实现方法，对于需要同步的业务逻辑，就可以用async来解决问题
 
+
+## 关键词
+
+EventProxy
+async
+回调函数是可以取得外部作用域的变量的
+503 Service Temporarily Unavailable
+请求受限
+ superagent 会自动考虑 redirect , gzip/deflate压缩 各种问题…
+ 网站防抓，ban掉你了
+或者是异常访问量太大，被防火墙拦截了
+比如有认证的，不同文件格式、编码处理，各种奇怪的url合规化处理、重复抓取问题、cookies 跟随问题、多线程多进程抓取、多节点抓取、抓取调度、资源压缩等一系列问题。
+不然很容易被单IP的巨量 URL 请求攻击到崩溃
+cheerio-eq
+cheerio
+superagent callback(null, OneTargetPage);
+依赖注入

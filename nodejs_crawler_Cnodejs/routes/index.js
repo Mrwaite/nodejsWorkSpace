@@ -3,7 +3,7 @@ var request = require('superagent');
 var cheerio = require('cheerio');
 var router = express.Router();
 var settings = require('../setting.js');
-var Urls = require('../moderls/Urls');
+var Urls = require('../models/Urls');
 
 /* GET home page. */
 
@@ -29,7 +29,7 @@ module.exports = function(app){
                 return res.send(save);
             }
             else if(err){
-                return res.send(err);
+                //return res.send(err);
             }
             else {
                 save.push(saveInfo);
@@ -38,9 +38,10 @@ module.exports = function(app){
                 //当一个页面上面的topic爬取完，就进行下个页面的爬取
                 //创建一个新的实例，用于下个页面的 爬取
                 if (_this.getNumber == 40) {
-                    settings.urlPage++;
-                    startCrawler = new Urls(settings);
-                    startCrawler.guideUrl(callback);
+                    return res.send(save);
+                    //settings.urlPage++;
+                    //startCrawler = new Urls(settings);
+                    //startCrawler.guideUrl(callback);
                 };
             }
         }

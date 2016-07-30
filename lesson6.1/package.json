@@ -1,0 +1,17 @@
+{
+  "name": "lesson6.1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "should": "^10.0.0"
+  },
+  "devDependencies": {
+    "mochawesome": "^1.4.0"
+  }
+}
