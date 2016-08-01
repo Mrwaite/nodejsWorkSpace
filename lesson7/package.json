@@ -1,0 +1,16 @@
+{
+  "name": "lesson7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "chai.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha-phantomjs": "^4.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startMocha": "mocha-phantomjs index.html --ssl-protocol=any --ignore-ssl-errors=true"
+  },
+  "author": "",
+  "license": "ISC"
+}
