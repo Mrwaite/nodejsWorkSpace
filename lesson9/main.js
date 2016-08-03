@@ -3,17 +3,17 @@ var suite = new Benchmark.Suite;
 
 var init1 =function (str) {
     return +str;
-}
+};
 
 var number = 100;
 
 var init2 = function (str) {
     return parseInt(str);
-}
+};
 
 var init3 = function (str) {
     return Number(str);
-}
+};
 
 
 
