@@ -54,7 +54,7 @@ var casper = require('casper').create({
 });*/
 
 var pageUrl = "http://user.geetest.com/login?url=http:%2F%2Faccount.geetest.com%2Freport";//casper.cli.get(0);//传进来的页面url
-var deltaResolveServer = "http://localhost:3000/"//casper.cli.get(1);//就是传偏移量之后处理的后台的地址
+var deltaResolveServer = "http://localhost:3000/";//casper.cli.get(1);//就是传偏移量之后处理的后台的地址
 //定义一些内部变量
 var id =(new Date()).getTime();
 
@@ -146,7 +146,7 @@ casper.then(function () {
     * */
     //把返回的计算出来的鼠标需要按住向x轴偏移量复制给result
     var result = casper.evaluate(function (url, param) {
-        return JSON.parse(__utils__.sendAJAX(url, 'POST', param, false));//__utils__.sendAJAX发送ajax请求，ajax请求求解滑块位置
+        return JSON.parse(__utils__.sendAJAX( "http://localhost:3000/", 'post', param, false));//__utils__.sendAJAX发送ajax请求，ajax请求求解滑块位置
     }, deltaResolveServer, {"params": JSON.stringify(pageParam)});//JSON.stringify转化为json格式
     if (result != null && result.status == 1) {
         //随后result赋值给deltaX

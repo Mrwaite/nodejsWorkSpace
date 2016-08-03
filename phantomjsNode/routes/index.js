@@ -6,16 +6,11 @@ var router = express.Router();
 
 module.exports = function (app) {
   app.post('/', function (req, res) {
-    var result = {
-        data : {
-          deltaX : '17'
-        }
-    };
-    res.send(JSON.stringify(result));
-  });
-    app.post('/a', function (req, res) {
+        var fullbgSrcArray = req.body.fullbgSrcArray;
+        var fullbgPositionArray = req.body.fullbgPositionArray;
+        var bgSrcArray = req.body.bgSrcArray;
+        var bgPositionArray = req.body.bgPositionArray;
         
-        console.log(req.body);
-    });
 
+  });
 }
