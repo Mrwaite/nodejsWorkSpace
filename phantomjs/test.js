@@ -146,11 +146,13 @@ casper.then(function () {
     * */
     //把返回的计算出来的鼠标需要按住向x轴偏移量复制给result
     var result = casper.evaluate(function (url, param) {
-        return JSON.parse(__utils__.sendAJAX( "http://localhost:3000/", 'post', param, false));//__utils__.sendAJAX发送ajax请求，ajax请求求解滑块位置
+        return JSON.parse(__utils__.sendAJAX( "http://127.0.0.1:3000/", 'POST', param, false));//__utils__.sendAJAX发送ajax请求，ajax请求求解滑块位置
     }, deltaResolveServer, {"params": JSON.stringify(pageParam)});//JSON.stringify转化为json格式
+    require('utils').dump(result);
     if (result != null && result.status == 1) {
         //随后result赋值给deltaX
         deltaX = result.data.deltaX;
+        this.echo(deltaX, result);
         this.echo("滑块位置求解成功:" + JSON.stringify(result.data));
     }
     else {
@@ -167,25 +169,32 @@ casper.then(function () {
     }
     this.echo("开始移动滑块,目标位移为  " + deltaX);
     currentTrailIndex = this.evaluate(function (selector, deltaX) {
+        console.log("111");
         //createEvent功能：创建dom的鼠标模拟事件
         var createEvent = function (eventName, ofsx, ofsy) {
             //创建dom的鼠标模拟事件
             var evt = document.createEvent('MouseEvents');
             //传入的eventName为事件名称，ofsx：x偏移量，ofsy：y偏移量
-            evt.initMouseEvent(eventName, true, false, null, 0, 0, 0, ofsx, ofsy, false, false, false, false, 0, null);
+            evt.initMouseEvent(eventName, true, true, document.defaultView, 0, 0, 0, ofsx, ofsy, false, false, false, false, 0, null);
             return evt;
         };
-        var trailArray = [
+        console.log('enter');
+        /*var trailArray = [
             // 算法生成的鼠标轨迹数据，为了不至于给极验团队带来太多的麻烦，我这里就省略了，请大家谅解
-        ];
-        var trailIndex = Math.round(Math.random() * (trailArray.length - 1));
-        var deltaArray = trailArray[trailIndex];
-        console.log('当前使用轨迹路径:' + (trailIndex + 1));
+        ];*/
+        //var trailIndex = Math.round(Math.random() * (trailArray.length - 1));
+        var deltaArray =[];
+        for(var i = 0; i < 112; i++){
+            deltaArray.push([1, 1, 100]);
+        }
+        console.log(deltaArray[2],deltaArray[3]);
+        //deltaArray = [[1,1,100],[1,1,100]]
+        //console.log('当前使用轨迹路径:' + (trailIndex + 1));
 
-        var delta = deltaX - 7;//要移动的距离,减掉7是为了防止过拟合导致验证失败
+        var delta = 110 - 7;//要移动的距离,减掉7是为了防止过拟合导致验证失败
         delta = delta > 200 ? 200 : delta;
         //查找要移动的对象，selector为鼠标拖动的控件
-        var obj = document.querySelector(selector);
+        var obj = document.querySelector('.gt_slider_knob');
         //obj.getBoundingClientRect()取得，控件的详细x，y位置，加上20和18就是上移的那个图片的位置了
         var startX = obj.getBoundingClientRect().left + 20;
         var startY = obj.getBoundingClientRect().top + 18;
@@ -213,7 +222,7 @@ casper.then(function () {
         };
         obj.dispatchEvent(createEvent("mousedown", startX, startY));
         moveToTarget(2);
-        return trailIndex;
+        return 2;
     }, ".gt_slider_knob", deltaX);
 }).then(function () {
     casper.waitForSelectorTextChange('.gt_info_type', function () {

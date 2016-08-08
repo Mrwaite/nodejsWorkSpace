@@ -6,11 +6,13 @@ var router = express.Router();
 
 module.exports = function (app) {
   app.post('/', function (req, res) {
-        var fullbgSrcArray = req.body.fullbgSrcArray;
-        var fullbgPositionArray = req.body.fullbgPositionArray;
-        var bgSrcArray = req.body.bgSrcArray;
-        var bgPositionArray = req.body.bgPositionArray;
-        
-
+        var result = {
+            data: {
+                deltaX : 110
+            },
+            status : 1
+        };
+        console.log(result.data.deltaX);
+        res.set({'Content-Type' : 'application/json'}).send(JSON.stringify(result));
   });
 }
