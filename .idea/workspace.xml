@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b333cb9b-ca64-49f4-b0f4-3daec96a78da" name="默认" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phantomjs/tongfudun.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/views/boilerplate.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleBlog/simpleBlog" afterPath="$PROJECT_DIR$/simpleBlog/simpleBlog" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phantomjs/object.json" afterPath="$PROJECT_DIR$/phantomjs/object.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phantomjs/test.js" afterPath="$PROJECT_DIR$/phantomjs/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phantomjsNode/routes/index.js" afterPath="$PROJECT_DIR$/phantomjsNode/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test2/test3.js" afterPath="$PROJECT_DIR$/test2/test3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/app.js" afterPath="$PROJECT_DIR$/test/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/package.json" afterPath="$PROJECT_DIR$/test/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/routes/index.js" afterPath="$PROJECT_DIR$/test/routes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/views/index.ejs" afterPath="$PROJECT_DIR$/test/views/index.ejs" />
     </list>
     <ignored path="nodejsWorkSpace.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,31 +30,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/phantomjs/test.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="185" column="25" selection-start-line="185" selection-start-column="25" selection-end-line="185" selection-end-column="25" />
+            <state relative-caret-position="48">
+              <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/views/index.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="验证失败_1470385679296_null.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/phantomjs/验证失败_1470385679296_null.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tongfudun.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/phantomjs/tongfudun.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1098">
+              <caret line="106" column="21" selection-start-line="106" selection-start-column="4" selection-end-line="106" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="boilerplate.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/views/boilerplate.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/phantomjsNode/app.js">
+        <entry file="file://$PROJECT_DIR$/test/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/phantomjsNode/routes/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+            <state relative-caret-position="408">
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -61,6 +89,9 @@
       </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="1584">
@@ -69,9 +100,6 @@
               </first_editor>
               <second_editor />
             </state>
-          </provider>
-          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-            <state />
           </provider>
         </entry>
       </file>
@@ -105,16 +133,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.json" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/下载/test.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2640">
-              <caret line="110" column="72" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="72" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -132,9 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/nodejs/simpleBlog/routes/index.js" />
-        <option value="$PROJECT_DIR$/nodejs/simpleBlog/app.js" />
-        <option value="$PROJECT_DIR$/nodejs/simpleBlog/README.md" />
         <option value="$PROJECT_DIR$/nodejs/nodejs-demo/routes/index.js" />
         <option value="$PROJECT_DIR$/nodejs/simpleBlog/views/header.ejs" />
         <option value="$PROJECT_DIR$/nodejs_crawler_douban/app.js" />
@@ -144,7 +159,6 @@
         <option value="$PROJECT_DIR$/nodejs_crawler_Cnodejs/package.json" />
         <option value="$PROJECT_DIR$/nodejs_crawler_Cnodejs/models/User.js" />
         <option value="$PROJECT_DIR$/nodejs_crawler_Cnodejs/models/modeUrls.js" />
-        <option value="$PROJECT_DIR$/test/routes/index.js" />
         <option value="$PROJECT_DIR$/nodejs_crawler_Cnodejs/app.js" />
         <option value="$PROJECT_DIR$/nodejs_crawler_Cnodejs/setting.js" />
         <option value="$PROJECT_DIR$/nodejs_crawler_Cnodejs/models/Urls.js" />
@@ -169,7 +183,6 @@
         <option value="$PROJECT_DIR$/phantomjs/a.js" />
         <option value="$PROJECT_DIR$/test2/test2.js" />
         <option value="$PROJECT_DIR$/test2/test.js" />
-        <option value="$PROJECT_DIR$/test/app.js" />
         <option value="$PROJECT_DIR$/simpleBlog/simpleBlog/app.js" />
         <option value="$PROJECT_DIR$/lesson9/main.js" />
         <option value="$PROJECT_DIR$/phantomjs/object.txt" />
@@ -183,6 +196,11 @@
         <option value="$PROJECT_DIR$/test2/test3.js" />
         <option value="$PROJECT_DIR$/phantomjsNode/routes/index.js" />
         <option value="$PROJECT_DIR$/phantomjs/test.js" />
+        <option value="$PROJECT_DIR$/test/routes/index.js" />
+        <option value="$PROJECT_DIR$/test/app.js" />
+        <option value="$PROJECT_DIR$/test/views/boilerplate.ejs" />
+        <option value="$PROJECT_DIR$/test/views/index.ejs" />
+        <option value="$PROJECT_DIR$/phantomjs/tongfudun.js" />
       </list>
     </option>
   </component>
@@ -227,6 +245,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -256,31 +275,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="phantomjsNode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nodejsWorkSpace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nodejsWorkSpace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phantomjsNode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
+              <option name="myItemId" value="phantomjs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -298,12 +298,14 @@
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/lesson8/node_modules/mocha" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/helloworld/tmp" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/nodejs_crawler_Cnodejs" />
       <recent name="$PROJECT_DIR$/nodejs_crawler_Cnodejs/models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/phantomjs" />
+      <recent name="$PROJECT_DIR$/phantomjs/node_modules" />
+      <recent name="$PROJECT_DIR$/helloworld/tmp" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
@@ -474,11 +476,16 @@
       <workItem from="1470384169744" duration="6755000" />
       <workItem from="1470462905506" duration="599000" />
       <workItem from="1470646825989" duration="1204000" />
+      <workItem from="1470996477350" duration="80000" />
+      <workItem from="1471162944499" duration="6000" />
+      <workItem from="1471163004852" duration="33000" />
+      <workItem from="1471229926653" duration="2561000" />
+      <workItem from="1471268405379" duration="1470000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="368463000" />
+    <option name="totallyTimeSpent" value="372613000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -493,23 +500,23 @@
     <frame x="1920" y="0" width="1366" height="768" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12080537" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16405667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2413793" sideWeight="0.50631577" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12852664" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24215247" sideWeight="0.4936842" order="2" side_tool="false" content_ui="tabs" x="1927" y="254" width="1351" height="240" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24981357" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292876" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39811912" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24215247" sideWeight="0.4936842" order="2" side_tool="false" content_ui="tabs" x="1927" y="254" width="1351" height="240" />
       <window_info id="文档" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="1060" y="127" width="760" height="853" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39811912" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -549,35 +556,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/simpleBlog/simpleBlog/setting.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nodejs_crawler_Cnodejs/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lesson6/app.js" />
-    <entry file="file://$PROJECT_DIR$/lesson6.1/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Blog/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lesson6.1/test/mian.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -614,6 +592,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lesson6.1/README.md">
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="48">
@@ -622,11 +603,11 @@
           <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson7/README.md">
       <provider editor-type-id="MultiMarkdownFxPreviewEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lesson7/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="0">
@@ -635,11 +616,11 @@
           <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodejs_crawler_Cnodejs/README.md">
       <provider editor-type-id="MultiMarkdownFxPreviewEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nodejs_crawler_Cnodejs/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="216">
@@ -648,11 +629,11 @@
           <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleBlog/simpleBlog/README.md">
       <provider editor-type-id="MultiMarkdownFxPreviewEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleBlog/simpleBlog/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="1032">
@@ -660,9 +641,6 @@
           </first_editor>
           <second_editor />
         </state>
-      </provider>
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lesson8/routes/index.js">
@@ -673,6 +651,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lesson8/README.md">
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="96">
@@ -681,11 +662,11 @@
           <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson9/README.md">
       <provider editor-type-id="MultiMarkdownFxPreviewEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lesson9/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="72">
@@ -694,11 +675,11 @@
           <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phantomjs/node_modules/casperjs/README.md">
       <provider editor-type-id="MultiMarkdownFxPreviewEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phantomjs/node_modules/casperjs/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="600">
@@ -706,9 +687,6 @@
           </first_editor>
           <second_editor />
         </state>
-      </provider>
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nodejs_crawler_Cnodejs/app.js">
@@ -741,13 +719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1512">
-          <caret line="63" column="32" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phantomjs/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -770,13 +741,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/phantomjs/a.js" />
-    <entry file="file://$USER_HOME$/文档/test2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3312">
-          <caret line="234" column="13" selection-start-line="234" selection-start-column="13" selection-end-line="234" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/文档/test2.js" />
     <entry file="file://$PROJECT_DIR$/nodejs_crawler_Cnodejs/models/Urls.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -854,10 +819,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/文档/test.json">
+    <entry file="file://$USER_HOME$/文档/test.json" />
+    <entry file="file://$USER_HOME$/下载/test.json" />
+    <entry file="file://$USER_HOME$/shadowsocks (复件).json" />
+    <entry file="file://$PROJECT_DIR$/phantomjs/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="163" column="20" selection-start-line="163" selection-start-column="5" selection-end-line="163" selection-end-column="20" />
+        <state relative-caret-position="216">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -878,6 +846,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="1584">
@@ -886,9 +857,6 @@
           </first_editor>
           <second_editor />
         </state>
-      </provider>
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test2/test3.js">
@@ -915,26 +883,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/下载/test.json">
+    <entry file="file://$PROJECT_DIR$/test/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2640">
-          <caret line="110" column="72" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="72" />
+        <state relative-caret-position="408">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/shadowsocks (复件).json">
+    <entry file="file://$PROJECT_DIR$/test/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="48">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/phantomjs/test.js">
+    <entry file="file://$PROJECT_DIR$/test/views/boilerplate.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="185" column="25" selection-start-line="185" selection-start-column="25" selection-end-line="185" selection-end-column="25" />
+        <state relative-caret-position="240">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phantomjs/验证失败_1470385679296_null.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phantomjs/tongfudun.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1098">
+          <caret line="106" column="21" selection-start-line="106" selection-start-column="4" selection-end-line="106" selection-end-column="21" />
           <folding />
         </state>
       </provider>
